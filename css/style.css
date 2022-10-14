@@ -1,68 +1,64 @@
-body{
-    min-height: 100vh;
-    display: flex;
+* {
+  margin: 0;
+  padding: 0;
 }
-*{ 
-     margin: 0;
-     list-style: none;
-}
-.container{
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-    flex-direction: column;
-}
-.imagem{
-    width:50px;
-    margin-right: 40px;
-}
-.header{
-    height: 100px;
-    background-color: #272626;
-    box-shadow: 0 0 1rem #272626;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem 0 2rem;
-    
-}
-.content{
-    flex: 1;
-    padding: 2rem;
-}
-.footer{
-    height: 100px;
-}
-.footer{
-    box-shadow: 0 0 1rem #272626;
-    background-color: #272626;
-    height: 55px;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 10px 2rem 10px 2rem;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    flex: 1;
-    color: white;
-    font-size: xx-large;
-}
-nav > ul{
-    flex: 1;
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
 
+body {
+  font-family: "Open Sans", sans-serif;
 }
-.header > nav{
-    display: flex;
-    font-size: large;
-    font-weight: bold;
-    color: white;
-    flex: 1;
-    height: 100%;
-    align-items: flex-end;
-    padding-bottom: 2rem;
+
+header {
+  background-color: black;
+  height: 60px;
+  padding: 20px 50px;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 35px;
+  line-height: 60px;
+  color: white;
+  cursor: pointer;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  padding: 25px 13px;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 60px;
+}
+
+header nav a:hover {
+  border-bottom: 2px solid #65cdd5;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 75px;
+  position: relative;
+}
+
+header nav li:last-child {
+  margin-right: 0;
+}
+
+header nav li:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: black;
+  height: 60px;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
 }
